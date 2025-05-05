@@ -40,13 +40,20 @@ git clone https://github.com/youruser/dumb-login-test.git
 
 cd path/to/folder
 
+Select all files and open with VScode
+
+In Terminal:
 npm install
 
 npm start
 
+
+
 go to browser and type int URL: localhost:3000/login.asp
 ,
+
 start hacking :D
 
 have fun!!!
+
 https://buymeacoffee.com/lukassimun
