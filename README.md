@@ -24,6 +24,9 @@ A deliberately insecure login page for beginners to practice web hacking techniq
 
 
 git clone https://github.com/youruser/dumb-login-test.git
+
 cd dumb-login-test
+
 npm install
-node index.js
+
+ npm start
