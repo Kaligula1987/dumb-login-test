@@ -3,10 +3,6 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
 
-// Hint-based credentials
-const correctUsername = "admin";  // (Hint: Try the obvious)
-const correctPassword = "12345";  // (Hint: The dev is lazy and didn't choose a strong password)
-
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -72,13 +68,18 @@ app.get(['/login.asp', '/'], (req, res) => {
 app.post('/login.asp', (req, res) => {
   const { username: u, password: p } = req.body;
 
-  // Validate username and password (hidden from the user)
-  if (u === correctUsername && p === correctPassword) {
+  if (u === creds.username && p === creds.password) {
     res.send(`<h1 style="color:lime;font-family:monospace;">Welcome, admin!</h1>`);
   } else {
     res.send(`<h2 style="color:red;font-family:monospace;">Access Denied</h2><a href="/login.asp" style="color:gray;">Try again</a>`);
   }
 });
+
+// Dumb hardcoded credentials (kept hidden near the end)
+const creds = {
+  username: 'admin',
+  password: '12345'
+};
 
 app.listen(port, () => {
   console.log(`💀 Dumb login lab ready at http://localhost:${port}/login.asp`);
