@@ -26,7 +26,7 @@ Getting Started in VS Code
 
 If you don't have it already, download and install Visual Studio Code.
 
-2. Install Node.js
+2. Install Node.js ?extension?
 
 Make sure Node.js is installed on your machine. You can download it from nodejs.org. After installation, check in your terminal:
 
@@ -38,10 +38,15 @@ npm -v
 
 git clone https://github.com/youruser/dumb-login-test.git
 
-cd dumb-login-test
+cd path/to/folder
 
 npm install
 
 npm start
+
+go to browser and type int URL: localhost:3000/login.asp
+,
+start hacking :D
+
 have fun!!!
 https://buymeacoffee.com/lukassimun
