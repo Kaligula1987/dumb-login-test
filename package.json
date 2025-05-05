@@ -1,6 +1,7 @@
 {
-  "name": "vuln-login-lab",
+  "name": "dumb-login-test",
   "version": "1.0.0",
+  "description": "A beginner-friendly intentionally vulnerable login page.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
